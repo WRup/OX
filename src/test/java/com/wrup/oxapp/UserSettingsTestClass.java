@@ -12,6 +12,7 @@ import java.util.List;
 @Test
 public class UserSettingsTestClass {
 
+    //TODO: that is all possible settings? are you sure? maybe little bet on beer? :D
     @DataProvider
     public static Object[][] possibleUsersSettings() {
         return new Object[][]{

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 @Test
 public class NetSettingsTestClass {
 
-
+    //TODO: random, random, use random!!
     @DataProvider
     public static Object[][] checkNetRowsAndColumns(){
         return new Object[][]{
@@ -34,6 +34,7 @@ public class NetSettingsTestClass {
         assert net.getNetSize() == row*column;
     }
 
+    //TODO: give me more possible cases please :D
     @Test
     public void checkIfPassedRowParameterEqualsProperOne(){
         NetSettings netSettings = new NetSettings(1, 2);

@@ -7,6 +7,7 @@ class UserSettings {
 
     private Sign startSign;
 
+    //TODO: why number decide who starts?
     UserSettings(int whoStarts) {
         if (whoStarts == 1)
             this.startSign = Sign.O;

@@ -17,6 +17,7 @@ class Field {
         return fieldSign;
     }
 
+    //TODO: auto-generated?
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,6 +38,7 @@ class Field {
             return new Field(stateToChange);
     }
 
+    //TODO: do we need method to forcing change of field if we have changeState()?
     void setFieldSign(Sign signToPut) {
         this.fieldSign = signToPut;
     }

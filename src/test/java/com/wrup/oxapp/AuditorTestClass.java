@@ -14,16 +14,23 @@ public class AuditorTestClass {
 
     @Test
     public void checkIfAuditorAddDrawPoints() {
+        //TODO: I could set both players to start game and what..? :(
         User user1 = new User(Sign.X, true);
-        User user2 = new User(Sign.O, false);
+        User user2 = new User(Sign.O, true);
 
         List<User> userList = new ArrayList<>();
         userList.add(user1);
         userList.add(user2);
 
+        /* TODO: something like that -->
+        Users users = new Users(new User(...), new User(...));
+        Auditor auditor = new Auditor(users);
+         */
+
         Auditor auditor = new Auditor(userList);
         auditor.addDrawScore();
 
+        //TODO: where is comment when test failed?
         assert user1.getScore() == 1;
         assert user2.getScore() == 1;
     }

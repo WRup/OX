@@ -20,6 +20,7 @@ class MoveMaker {
 
     boolean putSign() {
         if (fieldChecker.checkField()) {
+            //TODO: get().set() uuu beautiful :p maybe something like net.checkField(field, sign)..?
             net.getField(row, column).setFieldSign(signToPut);
             return true;
         } else {

@@ -9,11 +9,13 @@ import org.testng.annotations.Test;
 @Test
 public class UserTestClass {
 
+    //TODO: you know that user can be empty?
         @DataProvider
     public static Object[][] checkSign(){
         return new Object[][]{
             {Sign.X},
             {Sign.O}
+            //{Sign.EMPTY)
         };
     }
 
@@ -32,6 +34,7 @@ public class UserTestClass {
         for(int i = 0; i<7; i++){
             for(int j=0; j<4; j++){
                 objects[counter2][0]=i;
+                //TODO: very clever, but we should adding only 3 or 1 points
                 objects[counter2][1]=j;
                 objects[counter2][2]=i+j;
                 counter2++;
@@ -67,6 +70,7 @@ public class UserTestClass {
         User user1 = new User(Sign.O, false);
         User user2 = new User(Sign.X, true);
         user1.addScore(3);
+        //TODO: I don't know how you compare --> put comparator in method comparePoints()
         assert user1.compareTo(user2) > 0;
     }
 

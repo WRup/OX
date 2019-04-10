@@ -1,5 +1,6 @@
 package com.wrup.oxapp;
 
+//TODO: next sad class belonging to no one
 class StringConverter {
 
     private String text;
@@ -12,6 +13,7 @@ class StringConverter {
         try {
             return Integer.parseInt(text);
         } catch (NumberFormatException e) {
+            //TODO: maybe ask player once again
             return -1;
         }
     }

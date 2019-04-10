@@ -23,4 +23,11 @@ public class UserProviderTestClass {
         UserProvider userProvider = new UserProvider();
         assert userProvider.startingUser(userList).equals(user1);
     }
+
+    /*TODO: the same?
+    @Test
+    public void checkIfReturnsProperUser(){
+        User user = new User(Sign.X,true);
+        assert user.isFirst();
+    }*/
 }

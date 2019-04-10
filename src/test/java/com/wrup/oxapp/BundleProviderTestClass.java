@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 @Test
 public class BundleProviderTestClass {
 
-
+    //TODO: we check only one language? :(
     @Test
     public void checkIfReturnsProperMessage() {
 

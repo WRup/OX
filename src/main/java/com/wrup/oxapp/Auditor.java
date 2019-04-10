@@ -7,7 +7,10 @@ import java.util.List;
  */
 class Auditor {
 
+    //TODO: maybe players will be better name
+    //TODO: maybe new object as Users with List (add users in constructor)
     private List<User> users;
+    //TODO: who is user here? is he a winner?
     private User user;
 
     Auditor(List<User> users) {
@@ -25,6 +28,7 @@ class Auditor {
         }
     }
 
+    //TODO: why winning() is differ only by user.toString() from result()
     String[] winning() {
         return new String[]{
                 user.toString(),
@@ -36,7 +40,6 @@ class Auditor {
     }
 
     String[] results() {
-
         return new String[]{
                 users.get(0).toString(),
                 String.valueOf(users.get(0).getScore()),

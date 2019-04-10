@@ -1,3 +1,5 @@
+//very helpful file
+
 Wybierz jezyk/Choose langauge:
 1. Polski
 2. English

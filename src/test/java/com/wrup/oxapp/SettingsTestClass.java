@@ -14,7 +14,8 @@ public class SettingsTestClass {
     @Test
     public void testGeneratedUsers() {
         Settings settings = new Settings();
-        settings.setStartPlayer(1);
+        //TODO: who is starting now? :D naught(y) O or cROSS (watch Friends!) X?
+        settings.setStartPlayer(69);
         List<User> userList = new ArrayList<User>();
         userList.add(new User(Sign.O, true));
         userList.add(new User(Sign.X, false));
@@ -25,6 +26,7 @@ public class SettingsTestClass {
     @Test
     public void testGeneratedNet(){
         Settings settings = new Settings();
+        //TODO: not 5x5? :p
         settings.setNetSize(3,3);
 
         NetSettings netSettings = new NetSettings(3,3);

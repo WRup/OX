@@ -13,6 +13,7 @@ import java.util.Scanner;
  * @author Wiktor Rup
  */
 
+//TODO: you test here Game class, GameInitializer or both?
 @Test
 public class GameTestClass {
 

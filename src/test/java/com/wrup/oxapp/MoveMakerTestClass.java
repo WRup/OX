@@ -11,6 +11,7 @@ import java.util.Random;
 @Test
 public class MoveMakerTestClass {
 
+    //TODO: why 5x5 is so great you use it in each test?
     @DataProvider
     public static Object[][] checkInitialFieldsIn5x5Net(){
         int counter = 0;
@@ -71,7 +72,6 @@ public class MoveMakerTestClass {
         moveMaker.putSign();
         assert net.getField(row,column).getFieldSign().equals(moveMaker.getSignToPut());
     }
-
 
 
 

@@ -3,6 +3,8 @@ package com.wrup.oxapp;
 /**
  * @author Wiktor Rup
  */
+
+//TODO: isn't Input == InputValidator? Input class only checks and validate :p
 class Input {
 
     private InputValidator inputValidator = new InputValidator();

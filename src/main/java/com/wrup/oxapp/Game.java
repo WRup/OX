@@ -29,16 +29,21 @@ class Game {
     void startGame(Scanner scanner) {
         moveCounter = net.getNetSize();
         UserProvider userProvider = new UserProvider();
+        //TODO: so our output is wrapper to Scanner, but input is regular Scanner?
         Output output = new Output(scanner);
         Input input = new Input();
 
         while (numberOfGames <= 3) {
+            //TODO: gameName isn't TicTacToe? how do I know that name is number? and why I need here BundleProvider? :o
             output.printGameName(numberOfGames, settings.getBundleProvider());
             while (!winner && moveCounter != 0) {
+                //TODO: starting user is a list of users? what?
                 User user = userProvider.startingUser(users);
+                //TODO: what am I doing here? I need net, user, output, input, judge, auditor, pizza, beer, chips, money, hope, sun, world peace.. :p
                 startRound(net, user, output, input, judge, auditor);
             }
             if(winner) {
+                //TODO: I need BundleProvider everywhere but it is only kindly, ordinary, old friend - STRING
                 output.printWinnerAnnouncement(auditor.winning(), settings.getBundleProvider());
                 resetGame();
             } else {
@@ -53,6 +58,7 @@ class Game {
 
     }
 
+    //TODO: this class shouldn't be responsible for round
     private void startRound(Net net, User user, Output output, Input input, Judge judge, Auditor auditor) {
 
         output.printNet(net);
@@ -61,6 +67,7 @@ class Game {
             output.wrongInput(settings.getBundleProvider());
             move = output.userMove(settings.getBundleProvider(), user);
         }
+        //TODO: I don't know why we count moves
         moveCounter--;
 
         if(judge.checkWinner(move, net)) {

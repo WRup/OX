@@ -25,6 +25,14 @@ public class FieldTestClass {
         Field field = new Field(Sign.O);
         assert field.fieldSign.equals(Sign.O);
     }
+
+    /*TODO: :p
+    @Test
+    public void testIfLittleSweetVermiculeIsLittleSweetVermicule() {
+        LittleSweetVermicule littleSweetVermicule = new LittleSweetVermicule();
+        assert littleSweetVermicule.equals(littleSweetVermicule);
+    }*/
+
     @Test
     public void testFieldEquality(){
         Field emptyField = new Field(Sign.EMPTY);
@@ -35,7 +43,7 @@ public class FieldTestClass {
         assert emptyField.equals(new Field(Sign.EMPTY));
     }
 
-
+    //TODO: create new class for DataProvider
     @DataProvider
     public static Object[][] fieldStates(){
         return new Object[][]{

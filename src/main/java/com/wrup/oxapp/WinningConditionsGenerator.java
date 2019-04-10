@@ -71,6 +71,7 @@ class WinningConditionsGenerator {
         return toReturn;
     }
 
+    //TODO: I do not know if I want to know what's going on here :p
     List<String> autoHorizontalWinGenerator(int rows, int columns, int patternLength) {
         List<String> movesToWin = new ArrayList<>();
         StringBuilder builder = new StringBuilder();
@@ -81,9 +82,10 @@ class WinningConditionsGenerator {
                 for (int i = j; i < patternLength + j; i++) {
                     if (k == columns - 1) {
                         builder.append(i).append(",").append(k).append(System.lineSeparator());
-                        if (i != patternLength - 1 + j) {//WSTAWIA 3 KÓŁKA I DWA XY DLATEGO TU JEST - NIE WYWALAC
+                        //TODO: hahahahahahah wywalilam! :p
+                        /*if (i != patternLength - 1 + j) {//WSTAWIA 3 KÓŁKA I DWA XY DLATEGO TU JEST - NIE WYWALAC
                             builder.append(i).append(",").append(0).append(System.lineSeparator());
-                        }
+                        }*/
                     } else {
                         builder.append(i).append(",").append(k).append(System.lineSeparator());
                         if (i != patternLength - 1 + j) {//WSTAWIA 3 KÓŁKA I DWA XY DLATEGO TU JEST - NIE WYWALAC

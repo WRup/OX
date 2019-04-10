@@ -28,6 +28,7 @@ class NetPrinter {
             }
             System.out.println();
             System.out.print("---*");
+            //TODO: instead of loop you can use Collections.nCopies(howManyTimes, "whatToPrint");
             for (int column = 0; column < net.howManyColumns(); column++) {
                 System.out.print("---*");
             }
@@ -49,6 +50,7 @@ class NetPrinter {
 
     private void printUpperBorder() {
         System.out.print("---*");
+        //TODO: up..
         for (int column = 0; column < net.howManyColumns(); column++) {
             System.out.print("---*");
         }

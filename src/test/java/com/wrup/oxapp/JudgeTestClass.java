@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 /**
  * @author Wiktor Rup
  */
+//TODO: only one class without my comment, so I need to write here something :D you'r welcome ;)
 @Test
 public class JudgeTestClass {
 

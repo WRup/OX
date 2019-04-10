@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * @author Wiktor Rup
  */
+
+//TODO: I've got very similar class :p
 class Output {
 
     private MessagePrinter messagePrinter = new MessagePrinter();
@@ -18,6 +20,7 @@ class Output {
         this.scanner = scanner;
     }
 
+    //TODO: once again.. what if I want to have 274 languages?
     String chooseLanguage() {
         messagePrinter.print("Wybierz jezyk/Choose langauge:");
         messagePrinter.print("1. Polski");

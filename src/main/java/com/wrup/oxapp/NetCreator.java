@@ -12,6 +12,7 @@ class NetCreator {
     }
 
     Net createNet() {
+        //TODO: getRow()? some random row?
         Field[][] fields = new Field[netSettings.getRow()][netSettings.getColumn()];
         for (int i = 0; i < fields.length; i++) {
             for (int j = 0; j < fields[i].length; j++) {

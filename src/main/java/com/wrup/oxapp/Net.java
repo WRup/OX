@@ -3,6 +3,7 @@ package com.wrup.oxapp;
 /**
  * @author Wiktor Rup
  */
+//TODO: this is board, yes? :D
 class Net {
 
     private Field[][] fields;
@@ -11,6 +12,7 @@ class Net {
         this.fields = fields;
     }
 
+    //TODO: why we don't have field to remember net size?
     int getNetSize() {
         int netSize = 0;
         for (Field[] field : fields) {

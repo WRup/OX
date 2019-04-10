@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 @Test
 public class NetTestClass {
 
-
+    //TODO: do you know random? :p
     @DataProvider
     public static Object[][] netSizesGeneratorWhichAreOk(){
         return new Object[][]{
@@ -93,6 +93,7 @@ public class NetTestClass {
         assert net.getNetSize() == expected;
     }
 
+    //TODO: 5x5 again?
     @Test(dataProvider = "checkInitialFieldsIn5x5Net")
     public void testIfNewNetIsFulfilledWithEmptyFields(int row, int column, Sign expectedState){
         NetCreator netCreator = new NetCreator(new NetSettings(5,5));

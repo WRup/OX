@@ -11,7 +11,7 @@ import java.util.Random;
 @Test
 public class InputValidatorTestClass {
 
-
+    //TODO: where do I use that?
     @DataProvider
     public static Object[][] negativeNumbersForInputTest() {
         Random random = new Random();
@@ -39,6 +39,7 @@ public class InputValidatorTestClass {
         assert inputValidator.checkIfNetWidthIsProper(sizeOfNet);
     }
 
+    //TODO: hahaha, I want to check 69 number :p
     @Test
     public void checkIfGivenNumberIs1Or2() {
         Input inputValidator = new Input();

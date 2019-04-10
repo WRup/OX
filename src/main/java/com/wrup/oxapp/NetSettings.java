@@ -3,6 +3,7 @@ package com.wrup.oxapp;
 /**
  * @author Wiktor Rup
  */
+//TODO: it's net settings or net size?
 class NetSettings {
 
     private final int row;

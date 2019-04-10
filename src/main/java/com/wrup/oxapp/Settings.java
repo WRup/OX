@@ -11,7 +11,10 @@ class Settings {
     private UserSettings userSettings;
     private NetSettings netSettings;
     private int winStreak;
+    //TODO: why BundleProvider and not Language for example?
     private BundleProvider bundleProvider;
+
+    //TODO: maybe some constructor..?
 
     List<User> generateUsers() {
         UserGenerator userGenerator = new UserGenerator(userSettings);
@@ -39,6 +42,7 @@ class Settings {
         userSettings = new UserSettings(whoStarts);
     }
 
+    //TODO: and one more time :D what if I want to have 274 languages?
     void setBundleProvider(int language) {
         if (language == 1)
             this.bundleProvider = new BundleProvider("pl");

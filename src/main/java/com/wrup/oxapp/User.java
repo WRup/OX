@@ -9,6 +9,7 @@ class User implements Comparable {
 
     private Sign sign;
     private int score;
+    //TODO: what if both of players have true as 'isFirst'?
     private boolean isFirst;
 
     User(Sign sign, boolean isFirst) {
@@ -21,6 +22,7 @@ class User implements Comparable {
         score += i;
     }
 
+    //TODO:auto-generated?
     @Override
     public int hashCode() {
         return Objects.hash(sign, score, isFirst);
